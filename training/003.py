@@ -22,12 +22,14 @@ def main():
     u = 0
     v = 0
 
-    _, u = bft(first_diagram, u, 0, u, 0)
-    max, _ = bft(second_diagram, u, 0, v, 0)
+    _, u = dfs(first_diagram, u, 0, u, 0)
+    max, _ = dfs(second_diagram, u, 0, v, 0)
     print(max+1)
 
+# 深さ優先探索
 
-def bft(diagram, current, depth, end, max_depth):
+
+def dfs(diagram, current, depth, end, max_depth):
 
     for a in range(len(diagram[current])):
         if diagram[current][a] == 1:
