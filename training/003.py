@@ -39,7 +39,7 @@ def dfs(diagram, current, depth, end, max_depth):
             if next_depth > max_depth:
                 max_depth = next_depth
                 end = a
-            max_depth, end = bft(diagram, a, next_depth, end, max_depth)
+            max_depth, end = dfs(diagram, a, next_depth, end, max_depth)
     return max_depth, end
 
 
