@@ -1,0 +1,15 @@
+5
+ACABB
+--------
+4
+--------
+4
+CABC
+--------
+3
+--------
+30
+AABABBBABABBABABCABACAABCBACCA
+--------
+17
+--------
